@@ -368,5 +368,11 @@ static inline __attribute__((always_inline))
 #endif  // Sd2PinMap_h
 
 #else
-#error Architecture or board not supported.
+
+#include <Arduino.h>
+
+uint8_t const SS_PIN = 33;
+uint8_t const MOSI_PIN = 18;
+uint8_t const MISO_PIN = 19;
+uint8_t const SCK_PIN = 5;
 #endif
