@@ -31,7 +31,7 @@ static volatile RwReg *mosiport, *clkport, *misoport;
 static uint32_t mosipinmask, clkpinmask, misopinmask;
 #else
 static int8_t mosiPin_, misoPin_, clockPin_;
-static volatile uint8_t *mosiport, *clkport, *misoport;
+static volatile uint32_t *mosiport, *clkport, *misoport;
 static uint8_t mosipinmask, clkpinmask, misopinmask;
 #endif
 
